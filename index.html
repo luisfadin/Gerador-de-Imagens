@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/img/Sung jin woo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="src/Js/app.js"></script>
+    <title>Seleção de personagens</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">Seleção de personagens</h1>
+    </header>
+    
+    <main class="texto">
+        <!-- Opções de seleção -->
+        <select name="Selecione" class="selecao-personagem">
+            <option value="" disabled selected>--Selecione um personagem--</option> 
+            <!-- exibe uma opção inválida e a define como padrao -->
+            <option value='Jin_woo'>Sung Jin Woo</option>
+            <option value='Isagi_Yoichi'>Isagi Yoichi</option>
+            <option value='seishiro_nagi'>Seishiro Nagi</option>
+            <option value='itoshi_rin'>Itoshi Rin</option>
+            <option value='itoshi_sae' class="padrao-img">Itoshi Sae</option>
+            <option value='igris' class="padrao-img">Igris</option>
+            <option value='izuku_midoriya'>Izuku Midoriya</option>
+            <option value='shoto_todoroki'>Shoto Todoroki</option>
+            <option value='beru' class="padrao-img">Beru</option>
+        </select>        
+                
+        <section class="gerar-personagem"></section>
+        
+        <!-- Botoes -->
+        <br> 
+        <button onclick="gerarImagem()" class="botao-gerar">Gerar Imagem</button>        
+        <button onclick="deletarImagem()" class="botao-deletar" disabled>Deletar Imagem</button>     
+        
+    </main>
+
+    <footer class="rodape">
+        <h3>&copy; Alisondv & &copy;Fadin</h3>
+        <button onclick="wallpaperImagem()" class="botao-wallpaper" disabled>Definir Imagem como Wallpaper </button>
+    </footer>
+</body>
+</html>

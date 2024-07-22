@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}   
+
+body{
+    height: 100vh;
+    color: rgb(202, 231, 201);
+    background-color: rgba(12, 11, 11, 0.918);
+}
+
+.cabecalho{
+    color: white;
+    text-align: center;
+    padding: 2% 0% 3% 0%;
+}
+main{
+    text-align: center;
+}
+.texto{
+    min-height: 80vh;
+}
+.rodape{
+    position: relative;  /* Define o rodapé como um contêiner posicionado */
+    align-items: flex-end;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+} 
+
+.gerar-personagem{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.425);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px; 
+    max-width: 380px; 
+    margin: auto;
+}
+
+.gerar-personagem img{
+    max-width: 100%; /* A imagem não ultrapassa a largura do seu contêiner */
+    height: auto; /* A altura é ajustada proporcionalmente à largura */
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Adiciona sombra à imagem */
+}
+
+.selecao-personagem{
+    position: relative;
+    top: -3vh;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.062); 
+    color: white;
+}
+
+select option{
+    color: black;
+}
+select option:disabled{
+    background-color: grey;
+    color: black;
+}
+
+.botao-gerar{
+    background-color: #3a307c;
+    border-radius: 20px;    
+    color: white;
+    cursor: pointer;
+    min-width: 16%;
+    min-height: 3vh;
+    height: 4vh;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.botao-gerar:hover{
+    background-color: #30276898;
+}
+
+.botao-deletar{
+    background-color: #3a307c;
+    border-radius: 20px;    
+    color: white;
+    min-width: 16%;
+    min-height: 3vh;
+    height: 4vh;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: italic;
+}
+
+/*posicionando o botao "definir como wallpaper" no canto inferior direito paralelo aos nomes*/
+.botao-wallpaper{
+    position: absolute; /* Define a posição absoluta dentro do rodapé */
+    bottom: 4.5px; /* Posiciona os botões 4.5px acima do fundo do rodapé */
+    right: 10px; /* Posiciona os botões 10px à esquerda da borda direita do rodapé */
+    display: flex; /*Transforma o botao em um container flexivel*/
+    align-items: center;  /*Centraliza o texto verticalmente*/
+    justify-content: center; /*centraliza o texto horizontalmente*/
+}
+
+.botao-wallpaper{
+    background-color: #3a307c;
+    border-radius: 20px;    
+    color: white;
+    min-width: 16%;
+    min-height: 3vh;
+    height: 4vh;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: italic;
+}
+
+button:disabled {
+    background-color: grey;
+}
+
+.padrao-img{
+    height: auto; 
+    width: 380px; 
+}
